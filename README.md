@@ -1,6 +1,6 @@
 Group Project: Web Development with HTML, CSS, and Flask
 Overview
-This repository contains the code and resources for a group project led by yours truly, with
+This repository contains the implementation of fundamental data structures—Linked List, Stack, and Queue—using Python. The code and resources for a group project led by yours truly, with
 
 Apitan, Mark Justine
 Cabaccan, Aldrian
