@@ -1,0 +1,184 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth; 
+  }
+
+  header {      
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f4f4f4;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+  }
+
+  .header-logo-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-logo {
+    width: 30px;
+    height: auto;
+  }
+
+  header h1 {
+    margin-left: 10px; 
+    font-size: 24px;
+    font-weight: normal;
+    color: #333;
+  }
+
+  nav {
+    margin-left: auto; 
+  }
+
+  nav button {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #FF0072;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+  }
+
+  nav button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #808080;
+    z-index: -1;
+  }
+
+  nav button:hover,
+  nav button:focus {
+    color: white;
+  }
+
+  nav button:hover:before,
+  nav button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+  nav button:active {
+    transform: scale(0.9);
+  }
+
+  nav button {
+    margin-left: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  nav button:hover {
+    text-decoration: underline;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+
+/* Input Area */
+#input-area {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 20px auto;  
+    margin-top: 120px; /*pang gitna*/
+    display: block;
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Output Area */
+#output-area {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px; 
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Buttons in the container */
+.button-container button {
+    width: 30%; 
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+/* Button for full width (Print Button) */
+.button-container .full-width {
+    width: 100%; /* Button spans the full width */
+}
+
+/* Button hover effect */
+.button-container button:hover {
+    background-color: #ddd;
+}
+
+
+/* Output Area styling */
+#output-area {
+    background-color: #f9f9f9;
+    height: 50px;
+    text-align: left;
+    overflow: hidden;
+}
+
+/* Success Indicator styling */
+#success-indicator {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    display: none; 
+}
+

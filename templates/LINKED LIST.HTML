@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENGINUITY - LINKED LIST</title>
+    <link rel="stylesheet" href="../static/css/linkedListStyle.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="../static/images/icon.png"
+        alt="Enginuity Logo"
+        class="header-logo"
+      />
+      <h1><b>Enginuity: Crafting Tomorrow with the Genius of Today</b></h1>
+      <nav>
+        <button onclick="document.location='/#home'">Home</button>
+        <button onclick="document.location='/#about-us'">About Us</button>
+        <button onclick="document.location='/#works'">Works</button>
+      </nav>
+    </header>
+
+    <section>
+      <form action="#" method="post">
+        <textarea
+          id="input-area"
+          name="input"
+          placeholder="Enter your input here..."
+        ></textarea>
+        <div class="button-container">
+          <button
+            type="submit"
+            name="action"
+            value="insert_beginning"
+            class="btn btn-primary"
+          >
+            Insert at Beginning
+          </button>
+          <button
+            type="submit"
+            name="action"
+            value="insert_end"
+            class="btn btn-primary"
+          >
+            Insert at End
+          </button>
+          <button
+            type="submit"
+            name="action"
+            value="remove_beginning"
+            class="btn btn-danger"
+          >
+            Remove at Beginning
+          </button>
+          <button
+            type="submit"
+            name="action"
+            value="remove_end"
+            class="btn btn-danger"
+          >
+            Remove at End
+          </button>
+          <button
+            type="submit"
+            name="action"
+            value="remove_position"
+            class="btn btn-warning"
+          >
+            Remove at Position
+          </button>
+          <button
+            type="submit"
+            name="action"
+            value="search"
+            class="btn btn-info"
+          >
+            Search
+          </button>
+          <button
+            type="submit"
+            name="action"
+            value="print"
+            id="print-btn"
+            class="btn btn-success full-width"
+          >
+            Print Linked List
+          </button>
+        </div>
+        <textarea
+          id="output-area"
+          readonly
+          placeholder="Output will appear here..."
+        >
+{% if success_message %}{{ success_message }}{% else %}Output will appear here...{% endif %}</textarea
+        >
+      </form>
+    </section>
+  </body>
+</html>
