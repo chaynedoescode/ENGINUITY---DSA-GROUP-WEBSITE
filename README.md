@@ -16,3 +16,5 @@ CSS: Designing and styling web pages.
 Flask: Building a backend web application with Python.
 Current Status
 As of December 8, 2024, this project is still ongoing. We are actively working on integrating features and refining the code.
+
+Note: images directory is deleted for privacy purposes.
